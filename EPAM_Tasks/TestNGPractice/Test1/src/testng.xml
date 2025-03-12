@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite1" parallel="methods" thread-count="1">
+    <test name="test1">
+        <parameter name="num1" value="5"/>
+        <parameter name="num2" value="6"/>
+        <classes>
+            <class name="TestEmployeeDetails">
+                <methods>
+                    <include name="testYearlySalary"/>
+                    <include name="testAppraisal" />
+                    <include name="testAppraisal1" />
+                    <include name="testAppraisal2" />
+                    <include name="testParameters" />
+                    <include name="testParameters1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

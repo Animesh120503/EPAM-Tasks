@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51156d17-e315-4a01-bb90-52c086047e11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Advanced Control Tests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Advanced Control Tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Data Provider Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Data Provider Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Exception Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Exception Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Initialization Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Initialization Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Parameter Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Parameter Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Transactions Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/Transactions Test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/Banking Test Suite/testng-failed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microlearn-testng/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountAdvancedControlTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountAdvancedControlTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountDataDrivenTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountDataDrivenTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountExceptionTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountExceptionTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountInitializationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountInitializationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountParameterizedTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountParameterizedTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountTransactionTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/junitreports/TEST-com.epam.campus.BankAccountTransactionTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microlearn-testng/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microlearn-testng/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/microlearn-testng" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2syON2dgv5hNsO3F8pcyfBlTqKx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/animesh_pradhan/Desktop/EPAM-Tasks/QEML-3.1"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51156d17-e315-4a01-bb90-52c086047e11" name="Changes" comment="" />
+      <created>1739424304534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739424304534</updated>
+    </task>
+    <servers />
+  </component>
+</project>
