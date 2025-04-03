@@ -1,0 +1,8 @@
+<suite name="JHipster Testing Suite">
+    <parameter name="browserType" value="Chrome"/>
+    <test name="Login Tests">
+        <classes>
+            <class name="com.epam.Tests.login.LoginTest"/>
+        </classes>
+    </test>
+</suite>
