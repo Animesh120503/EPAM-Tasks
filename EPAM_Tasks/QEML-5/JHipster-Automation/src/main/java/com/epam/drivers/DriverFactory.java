@@ -18,7 +18,6 @@ public class DriverFactory{
             default:
                 throw new IllegalArgumentException("Invalid Browser Type.");
         }
-
         return driver;
     }
 }

@@ -1,35 +1,35 @@
 package com.epam.pages;
 
+import com.epam.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    private WebDriver driver;
+public class LoginPage extends BasePage {
 
-    @FindBy(id="username")
-    private WebElement username;
-    @FindBy(id="password")
-    private WebElement password;
-    @FindBy(xpath="//button[@type='submit']")
-    private WebElement signInBtn;
+    private final By username = By.id("username");
+    private final By password = By.id("password");
+    private final By signInBtn = By.xpath("//button[@type='submit']");
+    private final By successMessage = By.id("home-logged-message");
 
     public LoginPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
     public void sendUsername(String usernameStr){
-        username.sendKeys(usernameStr);
+        sendKeys(username, usernameStr);
     }
 
     public void sendPassword(String passwordStr){
-        password.sendKeys(passwordStr);
+        sendKeys(password, passwordStr);
     }
 
     public void clickLoginButton(){
-        signInBtn.click();
+        click(signInBtn);
+    }
+
+    public String getSuccessMessage(){
+        return getText(successMessage);
     }
 }
