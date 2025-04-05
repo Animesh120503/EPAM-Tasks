@@ -6,6 +6,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.time.Duration;
+
 public class GlobalListener implements ITestListener {
     private static final Logger logger = LogManager.getLogger(GlobalListener.class);
 
@@ -13,23 +15,21 @@ public class GlobalListener implements ITestListener {
     public void onTestStart(ITestResult result) {
         logger.info("Test execution started {} {}",
                 result.getTestClass(),
-                result.getStartMillis());
+                result.getStartMillis()+"ms");
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        logger.info("Test execution successful {} {} {}",
+        logger.info("Test execution successful {} {}",
                 result.getTestClass(),
-                result.getStartMillis(),
-                result.getEndMillis());
+                result.getEndMillis()-result.getStartMillis()+"ms");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        logger.error("Test execution failed {} {} {} {}",
+        logger.error("Test execution failed {} {} {}",
                 result.getTestClass(),
-                result.getStartMillis(),
-                result.getEndMillis(),
+                result.getEndMillis()-result.getStartMillis()+"ms",
                 result.getStatus());
     }
 

@@ -1,12 +1,9 @@
 package com.epam.base;
 
 import com.epam.config.ConfigReader;
-import com.epam.drivers.DriverFactory;
 import com.epam.drivers.DriverManager;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.util.Objects;
 
@@ -15,7 +12,7 @@ public class BaseTest {
 
     @BeforeTest
     @Parameters({"browserType"})
-    public void setup(String browserType){
+    public void setup(@Optional("chrome") String browserType){
         DriverManager.setDriver(browserType);
         driver = DriverManager.getDriver();
         driver.manage().window().maximize();

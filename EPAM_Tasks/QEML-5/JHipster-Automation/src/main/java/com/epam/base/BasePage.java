@@ -1,5 +1,6 @@
 package com.epam.base;
 
+import com.epam.drivers.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,11 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BasePage {
-    protected WebDriver driver;
+    protected WebDriver driver = DriverManager.getDriver();
 
-    public BasePage(WebDriver driver){
-        this.driver = driver;
-    }
+//    public BasePage(WebDriver driver){
+//        this.driver = driver;
+//
+//    }
 
     protected WebElement waitForElementToBeLocated(By locator){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));

@@ -12,10 +12,10 @@ public class LoginPage extends BasePage {
     private final By signInBtn = By.xpath("//button[@type='submit']");
     private final By successMessage = By.id("home-logged-message");
 
-    public LoginPage(WebDriver driver){
-        super(driver);
-        PageFactory.initElements(driver, this);
-    }
+//    public LoginPage(WebDriver driver){
+//        super(driver);
+//        PageFactory.initElements(driver, this);
+//    }
 
     public void sendUsername(String usernameStr){
         sendKeys(username, usernameStr);
