@@ -7,15 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
+    public LoginPage(WebDriver driver){
+        super(driver);
+    }
+
     private final By username = By.id("username");
     private final By password = By.id("password");
     private final By signInBtn = By.xpath("//button[@type='submit']");
-    private final By successMessage = By.id("home-logged-message");
-
-//    public LoginPage(WebDriver driver){
-//        super(driver);
-//        PageFactory.initElements(driver, this);
-//    }
+    private final By errorMessage = By.xpath("//div[@jhitranslate='login.messages.error.authentication']");
 
     public void sendUsername(String usernameStr){
         sendKeys(username, usernameStr);
@@ -29,7 +28,7 @@ public class LoginPage extends BasePage {
         click(signInBtn);
     }
 
-    public String getSuccessMessage(){
-        return getText(successMessage);
+    public String getErrorMessage(){
+        return getText(errorMessage);
     }
 }

@@ -12,7 +12,9 @@ public class BaseTest {
 
     @BeforeTest
     @Parameters({"browserType"})
-    public void setup(@Optional("chrome") String browserType){
+    public void setup(@Optional("edge") String browserType){
+        System.out.println("Browser Type: " +browserType);
+        System.out.println("Before test of base test! I have been called..."+Thread.currentThread().getId());
         DriverManager.setDriver(browserType);
         driver = DriverManager.getDriver();
         driver.manage().window().maximize();
@@ -20,6 +22,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown(){
+        System.out.println("After test of base test! I have been called..."+Thread.currentThread().getId());
         DriverManager.quitDriver();
     }
 

@@ -6,12 +6,12 @@ import org.openqa.selenium.WebDriver;
 
 public class LandingPage extends BasePage {
 
-    private final By signInLink = By.xpath("//a[@class='alert-link' and text()='sign in']");
-    private final By registerLink = By.xpath("//a[@routerLink='/account/register' and text()='Register a new account']");
+    public LandingPage(WebDriver driver){
+        super(driver);
+    }
 
-//    public LandingPage(WebDriver driver){
-//        super(driver);
-//    }
+    private final By signInLink = By.xpath("//a[@jhitranslate='global.messages.info.authenticated.link']");
+    private final By registerLink = By.xpath("//a[@jhitranslate='global.messages.info.register.link']");
 
     public void clickOnSignInLink(){
         click(signInLink);

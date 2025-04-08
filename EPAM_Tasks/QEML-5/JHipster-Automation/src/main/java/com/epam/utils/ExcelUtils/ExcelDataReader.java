@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ExcelDataReader {
-    public static Object[][] fetchDataFromFile(String fileName) throws IOException {
+    public synchronized static Object[][] fetchDataFromFile(String fileName) throws IOException {
         FileInputStream fileInputStream = new FileInputStream("src/test/resources/ExcelData/"+fileName);
         Workbook workbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = workbook.getSheetAt(0);

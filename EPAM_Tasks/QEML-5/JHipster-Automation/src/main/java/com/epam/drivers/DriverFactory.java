@@ -2,6 +2,7 @@ package com.epam.drivers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class DriverFactory{
@@ -10,7 +11,9 @@ public class DriverFactory{
     public WebDriver initializeDriver(String browserType){
         switch (browserType.toLowerCase()){
             case "chrome":
-                driver = new ChromeDriver();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--disable-popup-blocking");
+                driver = new ChromeDriver(chromeOptions);
                 break;
             case "edge":
                 driver = new EdgeDriver();

@@ -7,16 +7,16 @@ import org.openqa.selenium.support.FindBy;
 
 public class RegisterPage extends BasePage {
 
+    public RegisterPage(WebDriver driver){
+        super(driver);
+    }
+
     private final By username = By.xpath("//input[@data-cy='username']");
     private final By email = By.id("email");
     private final By newPassword = By.id("password");
     private final By confirmPassword = By.id("confirmPassword");
-    private final By registerBtn = By.xpath("//button[@type='submit' and text()='Register']");
-    private final By registrationSuccessMessage = By.xpath("//div[@class='alert alert-success']");
-
-//    public RegisterPage(WebDriver driver){
-//        super(driver);
-//    }
+    private final By registerBtn = By.xpath("//button[@type='submit']");
+    private final By registrationSuccessMessage = By.xpath("//div[@jhitranslate='register.messages.success']");
 
     public void enterUsername(String usernameStr){
         sendKeys(username, usernameStr);

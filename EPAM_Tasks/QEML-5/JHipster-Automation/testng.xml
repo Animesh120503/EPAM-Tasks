@@ -1,14 +1,14 @@
 <suite name="JHipster Testing Suite" parallel="tests" thread-count="2">
-    <test name="Registration Test">
-    <parameter name="browserType" value="Chrome"/>
+    <test name="Registration Test 1">
+    <parameter name="browserType" value="edge"/>
         <classes>
-            <class name="com.epam.Tests.register.RegisterTest"/>
+            <class name="com.epam.tests.register.RegisterTest"/>
         </classes>
     </test>
     <test name="Login Tests">
-        <parameter name="browserType" value="edge"/>
+        <parameter name="browserType" value="chrome"/>
         <classes>
-            <class name="com.epam.Tests.login.LoginTest"/>
+            <class name="com.epam.tests.login.LoginTest"/>
         </classes>
     </test>
 </suite>
