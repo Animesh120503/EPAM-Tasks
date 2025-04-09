@@ -1,17 +1,14 @@
 package com.epam.tests.register;
 
 import com.epam.base.BaseTest;
-import com.epam.config.ConfigReader;
 import com.epam.pages.LandingPage;
 import com.epam.pages.RegisterPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.Objects;
-
 import static org.testng.Assert.assertEquals;
 
-public class RegisterTest extends BaseTest {
+public class RegistrationTest extends BaseTest {
 
     RegisterPage registerPage;
     LandingPage landingPage;

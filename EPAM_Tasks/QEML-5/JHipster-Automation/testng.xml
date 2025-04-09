@@ -2,13 +2,18 @@
     <test name="Registration Test 1">
     <parameter name="browserType" value="edge"/>
         <classes>
-            <class name="com.epam.tests.register.RegisterTest"/>
+            <class name="com.epam.tests.register.RegistrationTest"/>
         </classes>
     </test>
     <test name="Login Tests">
         <parameter name="browserType" value="chrome"/>
         <classes>
             <class name="com.epam.tests.login.LoginTest"/>
+        </classes>
+    </test>
+    <test name="Bank Account Tests">
+        <classes>
+            <class name="com.epam.tests.bankAccount.CreateBankAccountTest"/>
         </classes>
     </test>
 </suite>

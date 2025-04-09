@@ -6,8 +6,6 @@ import com.epam.listeners.GlobalListener;
 import com.epam.pages.HomePage;
 import com.epam.pages.LandingPage;
 import com.epam.pages.LoginPage;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TimeoutException;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -33,7 +31,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test(dataProvider = "getValidLoginData", dataProviderClass = DataProviderUtil.class)
-    public void testValidLogin(String username, String password){
+    public void testLoginWithValidData(String username, String password){
         loginPage = new LoginPage(driver);
         loginPage.sendUsername(username);
         loginPage.sendPassword(password);
@@ -61,7 +59,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Test(dataProvider = "getInvalidLoginData", dataProviderClass = DataProviderUtil.class)
-    public void testInvalidLogin(String username, String password) {
+    public void testLoginWithInvalidData(String username, String password) {
         loginPage = new LoginPage(driver);
         loginPage.sendUsername(username);
         loginPage.sendPassword(password);

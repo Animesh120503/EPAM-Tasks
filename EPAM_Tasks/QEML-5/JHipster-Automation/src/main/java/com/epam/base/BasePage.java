@@ -16,7 +16,6 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
         this.driver = driver;
-
     }
 
     protected WebElement waitForElementToBeLocated(By locator){
@@ -24,12 +23,17 @@ public class BasePage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+    protected WebElement waitForElementToBeClickable(By locator){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
     protected void sendKeys(By locator, String key){
         waitForElementToBeLocated(locator).sendKeys(key);
     }
 
     protected void click(By locator){
-        waitForElementToBeLocated(locator).click();
+        waitForElementToBeClickable(locator).click();
     }
 
     protected String getText(By locator){
@@ -46,4 +50,5 @@ public class BasePage {
         Select select = new Select(driver.findElement(locator));
         select.selectByVisibleText(value);
     }
+
 }
