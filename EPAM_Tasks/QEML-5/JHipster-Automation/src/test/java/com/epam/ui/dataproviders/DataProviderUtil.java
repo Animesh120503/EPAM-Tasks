@@ -1,6 +1,6 @@
 package com.epam.ui.dataproviders;
 
-import com.epam.utils.ExcelUtils.ExcelDataReader;
+import com.epam.ui.utils.ExcelUtils.ExcelDataReader;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;

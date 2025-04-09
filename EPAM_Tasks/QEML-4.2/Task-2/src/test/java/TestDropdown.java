@@ -1,21 +1,17 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class TestDropdown {
+public class TestDropdown{
     WebDriver driver;
 
     @BeforeTest
@@ -59,17 +55,16 @@ public class TestDropdown {
         }
     }
 
-
     @Test(priority = 1)
     // Attempt to select option from a dropdown and handle potential exceptions
     public void testDropDownSelectionByValue() {
         try {
             WebElement selectValue = driver.findElement(By.xpath("//div[@id='withOptGroup']"));
-//            performScrolling();
             selectValue.click();
             WebElement selectValueOption = driver.findElement(By.xpath("//div[@id='react-select-2-option-0-1']"));
             selectValueOption.click();
-
+            Select select = new Select(driver.findElement(By.id("hub")));
+            driver.getWindowHandles();
             assertTrue(selectValue.getText().contains("Group 1, option 2"));
         } catch (NoSuchElementException e) {
             Assert.fail("Dropdown element not found: " + e.getMessage());

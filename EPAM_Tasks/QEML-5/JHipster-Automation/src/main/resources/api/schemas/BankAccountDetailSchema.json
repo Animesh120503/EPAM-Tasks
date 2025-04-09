@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": ["object","array"],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "user": {
+      "type": ["object", "null"],
+      "properties": {
+        "createdBy": {
+          "type": ["string","null"]
+        },
+        "createdDate": {
+          "type": ["null","string"]
+        },
+        "lastModifiedBy": {
+          "type": ["string","null"]
+        },
+        "lastModifiedDate": {
+          "type": ["null","string"]
+        },
+        "id": {
+          "type": ["integer","null"]
+        },
+        "login": {
+          "type": ["string","null"]
+        },
+        "firstName": {
+          "type": ["string","null"]
+        },
+        "lastName": {
+          "type": ["string","null"]
+        },
+        "email": {
+          "type": ["string","null"]
+        },
+        "activated": {
+          "type": ["boolean","null"]
+        },
+        "langKey": {
+          "type": ["string","null"]
+        },
+        "imageUrl": {
+          "type": ["string","null"]
+        },
+        "resetDate": {
+          "type": ["null","string"]
+        }
+      }
+    },
+    "operations": {
+      "type": ["null","array"]
+    }
+  },
+  "required": [
+    "name",
+    "balance"
+  ]
+}

@@ -1,4 +1,4 @@
-package com.epam.base;
+package com.epam.ui.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +18,7 @@ public class BasePage {
     }
 
     protected WebElement waitForElementToBeLocated(By locator){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 

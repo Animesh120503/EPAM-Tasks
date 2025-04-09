@@ -1,6 +1,6 @@
-package com.epam.pages;
+package com.epam.ui.pages;
 
-import com.epam.base.BasePage;
+import com.epam.ui.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

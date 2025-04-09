@@ -1,4 +1,4 @@
-package com.epam.utils.ExcelUtils;
+package com.epam.ui.utils.ExcelUtils;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ExcelDataReader {
     public synchronized static Object[][] fetchDataFromFile(String fileName) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream("src/test/resources/ExcelData/"+fileName);
+        FileInputStream fileInputStream = new FileInputStream("src/test/resources/ui/ExcelData/"+fileName);
         Workbook workbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = workbook.getSheetAt(0);
         int rows = sheet.getPhysicalNumberOfRows();

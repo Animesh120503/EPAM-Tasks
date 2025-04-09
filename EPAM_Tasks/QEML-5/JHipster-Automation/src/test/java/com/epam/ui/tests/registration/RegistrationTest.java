@@ -1,8 +1,8 @@
 package com.epam.ui.tests.registration;
 
 import com.epam.ui.base.BaseTest;
-import com.epam.pages.MainPage;
-import com.epam.pages.RegisterPage;
+import com.epam.ui.pages.MainPage;
+import com.epam.ui.pages.RegisterPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,14 +17,14 @@ public class RegistrationTest extends BaseTest {
     public void initializePagesAndNavigateToRegisterURL() {
         navigateToUrl("base_url");
 
-        mainPage = new MainPage(driver)
-                .clickOnRegistrationLink();
+        mainPage = new MainPage(driver);
+        mainPage.clickOnRegistrationLink();
     }
 
     @Test
     public void testValidRegistration() {
         registerPage = new RegisterPage(driver)
-                .enterUsername("Animesh")
+                .enterUsername("Animes")
                 .enterEmail("user@localhost.com")
                 .enterPassword("123456")
                 .enterConfirmPassword("123456")

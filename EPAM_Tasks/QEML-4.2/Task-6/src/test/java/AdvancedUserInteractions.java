@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -24,7 +25,7 @@ public class AdvancedUserInteractions {
     public void setup() {
         driver = new ChromeDriver();  // Create an instance of ChromeDriver
         driver.manage().window().maximize();  // Maximize the browser window
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // WebDriverWait with a 10-second timeout
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));// WebDriverWait with a 10-second timeout
     }
 
     //Perform a drag and drop operation on a specified draggable element to a specified target.
@@ -40,6 +41,8 @@ public class AdvancedUserInteractions {
             new Actions(driver)
                     .dragAndDrop(sourceElement, targetElement)
                     .perform();
+
+            Arrays.eq
         } catch (NoSuchElementException e) {
             System.out.println("No such element found: " + e.getMessage());
         } catch (Exception e) {

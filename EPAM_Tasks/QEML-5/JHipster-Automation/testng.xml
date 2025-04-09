@@ -1,19 +1,19 @@
 <suite name="JHipster Testing Suite" parallel="tests" thread-count="2">
     <test name="Registration Tests">
-    <parameter name="browserType" value="edge"/>
+<!--    <parameter name="browserType" value="edge"/>-->
         <classes>
-            <class name="com.epam.tests.register.RegistrationTest"/>
+            <class name="com.epam.ui.tests.registration.RegistrationTest"/>
         </classes>
     </test>
     <test name="Login Tests">
-        <parameter name="browserType" value="chrome"/>
+<!--        <parameter name="browserType" value="chrome"/>-->
         <classes>
-            <class name="com.epam.tests.login.LoginTest"/>
+            <class name="com.epam.ui.tests.login.LoginTest"/>
         </classes>
     </test>
     <test name="Bank Account Tests">
         <classes>
-            <class name="com.epam.tests.bankAccount.CreateBankAccountTest"/>
+            <class name="com.epam.ui.tests.bankAccount.CreateBankAccountTest"/>
         </classes>
     </test>
 </suite>

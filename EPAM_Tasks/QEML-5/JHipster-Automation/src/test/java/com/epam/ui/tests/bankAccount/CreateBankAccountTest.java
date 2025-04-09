@@ -1,8 +1,8 @@
 package com.epam.ui.tests.bankAccount;
 
 import com.epam.ui.base.BaseTest;
-import com.epam.pages.BankAccountPage;
-import com.epam.pages.MainPage;
+import com.epam.ui.pages.BankAccountPage;
+import com.epam.ui.pages.MainPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

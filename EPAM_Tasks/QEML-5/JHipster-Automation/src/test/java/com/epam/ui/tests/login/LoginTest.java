@@ -3,8 +3,8 @@ package com.epam.ui.tests.login;
 import com.epam.ui.dataproviders.DataProviderUtil;
 import com.epam.ui.base.BaseTest;
 import com.epam.ui.listeners.GlobalListener;
-import com.epam.pages.MainPage;
-import com.epam.pages.LoginPage;
+import com.epam.ui.pages.MainPage;
+import com.epam.ui.pages.LoginPage;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;

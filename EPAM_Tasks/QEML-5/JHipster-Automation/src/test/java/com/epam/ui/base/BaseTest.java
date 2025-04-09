@@ -1,9 +1,9 @@
 package com.epam.ui.base;
 
-import com.epam.config.ConfigReader;
-import com.epam.drivers.DriverManager;
-import com.epam.pages.MainPage;
-import com.epam.pages.LoginPage;
+import com.epam.ui.config.ConfigReader;
+import com.epam.ui.drivers.DriverManager;
+import com.epam.ui.pages.MainPage;
+import com.epam.ui.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 

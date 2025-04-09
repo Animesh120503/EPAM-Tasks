@@ -1,6 +1,6 @@
-package com.epam.pages;
+package com.epam.ui.pages;
 
-import com.epam.base.BasePage;
+import com.epam.ui.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,7 +15,7 @@ public class RegisterPage extends BasePage {
     private final By newPassword = By.id("password");
     private final By confirmPassword = By.id("confirmPassword");
     private final By registerBtn = By.xpath("//button[@type='submit']");
-    private final By registrationSuccessMessage = By.xpath("//div[@jhitranslate='registration.messages.success']");
+    private final By registrationSuccessMessage = By.xpath("//div[@jhitranslate='register.messages.success']");
 
     public RegisterPage enterUsername(String usernameStr){
         sendKeys(username, usernameStr);
