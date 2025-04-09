@@ -3,7 +3,6 @@ package com.epam.pages;
 import com.epam.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 
@@ -16,16 +15,19 @@ public class LoginPage extends BasePage {
     private final By signInBtn = By.xpath("//button[@type='submit']");
     private final By errorMessage = By.xpath("//div[@jhitranslate='login.messages.error.authentication']");
 
-    public void sendUsername(String usernameStr){
+    public LoginPage sendUsername(String usernameStr){
         sendKeys(username, usernameStr);
+        return this;
     }
 
-    public void sendPassword(String passwordStr){
+    public LoginPage sendPassword(String passwordStr){
         sendKeys(password, passwordStr);
+        return this;
     }
 
-    public void clickLoginButton(){
+    public LoginPage clickLoginButton(){
         click(signInBtn);
+        return this;
     }
 
     public String getErrorMessage(){

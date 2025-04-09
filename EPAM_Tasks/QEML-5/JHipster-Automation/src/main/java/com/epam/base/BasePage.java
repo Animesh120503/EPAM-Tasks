@@ -1,6 +1,5 @@
 package com.epam.base;
 
-import com.epam.drivers.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

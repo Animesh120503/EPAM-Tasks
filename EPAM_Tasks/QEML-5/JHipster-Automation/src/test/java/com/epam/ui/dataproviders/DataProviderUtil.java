@@ -1,4 +1,4 @@
-package com.epam.dataproviders;
+package com.epam.ui.dataproviders;
 
 import com.epam.utils.ExcelUtils.ExcelDataReader;
 import org.testng.annotations.DataProvider;

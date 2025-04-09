@@ -3,8 +3,6 @@ package com.epam.pages;
 import com.epam.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class BankAccountPage extends BasePage {
 
@@ -21,28 +19,34 @@ public class BankAccountPage extends BasePage {
 
     private final By footerElement = By.xpath("//p[@jhitranslate='footer']");
 
-    public void clickOnCreateNewBankAccount(){
+    public BankAccountPage clickOnCreateNewBankAccount(){
         click(createNewBankAccountBtn);
+        return this;
     }
 
-    public void setName(String name){
+    public BankAccountPage setName(String name){
         sendKeys(nameField, name);
+        return this;
     }
 
-    public void setBalance(String balance){
+    public BankAccountPage setBalance(String balance){
         sendKeys(balanceField, balance);
+        return this;
     }
 
-    public void setUser(String value){
+    public BankAccountPage setUser(String value){
         selectByVisibleText(userField, value);
+        return this;
     }
 
-    public void clickOnSave(){
+    public BankAccountPage clickOnSave(){
         click(saveBtn);
+        return this;
     }
 
-    public void clickOnCancel(){
+    public BankAccountPage clickOnCancel(){
         click(cancelBtn);
+        return this;
     }
 
     public boolean isNewBankAccountCreated(String name, String balance, String user){

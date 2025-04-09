@@ -3,7 +3,6 @@ package com.epam.pages;
 import com.epam.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
 
 public class RegisterPage extends BasePage {
 
@@ -16,26 +15,31 @@ public class RegisterPage extends BasePage {
     private final By newPassword = By.id("password");
     private final By confirmPassword = By.id("confirmPassword");
     private final By registerBtn = By.xpath("//button[@type='submit']");
-    private final By registrationSuccessMessage = By.xpath("//div[@jhitranslate='register.messages.success']");
+    private final By registrationSuccessMessage = By.xpath("//div[@jhitranslate='registration.messages.success']");
 
-    public void enterUsername(String usernameStr){
+    public RegisterPage enterUsername(String usernameStr){
         sendKeys(username, usernameStr);
+        return  this;
     }
 
-    public void enterEmail(String emailStr){
+    public RegisterPage enterEmail(String emailStr){
         sendKeys(email, emailStr);
+        return this;
     }
 
-    public void enterPassword(String passwordStr){
+    public RegisterPage enterPassword(String passwordStr){
         sendKeys(newPassword, passwordStr);
+        return this;
     }
 
-    public void enterConfirmPassword(String confirmPasswordStr){
+    public RegisterPage enterConfirmPassword(String confirmPasswordStr){
         sendKeys(confirmPassword, confirmPasswordStr);
+        return this;
     }
 
-    public void clickOnRegisterButton(){
+    public RegisterPage clickOnRegisterButton(){
         click(registerBtn);
+        return this;
     }
 
     public String getRegistrationSuccessMessage(){
