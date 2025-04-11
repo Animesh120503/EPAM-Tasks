@@ -1,6 +1,6 @@
 package com.epam.ui.base;
 
-import com.epam.ui.config.ConfigReader;
+import com.epam.ui.config.UIConfigReader;
 import com.epam.ui.drivers.DriverManager;
 import com.epam.ui.pages.MainPage;
 import com.epam.ui.pages.LoginPage;
@@ -32,8 +32,8 @@ public class BaseTest {
                 .clickOnSignInLink();
 
         loginPage = new LoginPage(driver)
-                .sendUsername(ConfigReader.getProperty("valid_username"))
-                .sendPassword(ConfigReader.getProperty("valid_password"))
+                .sendUsername(UIConfigReader.getProperty("valid_username"))
+                .sendPassword(UIConfigReader.getProperty("valid_password"))
                 .clickLoginButton();
 
         assertTrue(mainPage.getSuccessMessage().contains("You are logged in as user"));
@@ -45,6 +45,6 @@ public class BaseTest {
     }
 
     public void navigateToUrl(String url) {
-        driver.get(Objects.requireNonNull(ConfigReader.getProperty(url)));
+        driver.get(Objects.requireNonNull(UIConfigReader.getProperty(url)));
     }
 }

@@ -30,6 +30,22 @@ public class BankAccount implements Serializable {
         return balance;
     }
 
+    public void setId(Object id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     public User getUser() {
         return user;
     }
@@ -64,5 +80,16 @@ public class BankAccount implements Serializable {
         public BankAccount build() {
             return new BankAccount(this);
         }
+    }
+
+    public static BankAccount createDefaultBankAccount(){
+        return new Builder()
+                .setName("User 3")
+                .setBalance(4500)
+                .setUser(new User.Builder()
+                        .setId(2)
+                        .setLogin("user")
+                        .build())
+                .build();
     }
 }

@@ -1,12 +1,13 @@
-<suite name="JHipster Testing Suite" parallel="tests" thread-count="2">
+<suite name="JHipster UI Testing Suite" parallel="tests" thread-count="2">
+<!--    <listeners>-->
+<!--        <listener name="com.epam.listeners.GlobalListener"/>-->
+<!--    </listeners>-->
     <test name="Registration Tests">
-<!--    <parameter name="browserType" value="edge"/>-->
         <classes>
             <class name="com.epam.ui.tests.registration.RegistrationTest"/>
         </classes>
     </test>
     <test name="Login Tests">
-<!--        <parameter name="browserType" value="chrome"/>-->
         <classes>
             <class name="com.epam.ui.tests.login.LoginTest"/>
         </classes>

@@ -1,4 +1,4 @@
-package com.epam.ui.listeners;
+package com.epam.listeners;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

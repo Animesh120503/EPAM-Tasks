@@ -1,0 +1,15 @@
+<suite name="JHipster API Testing Suite" parallel="tests" thread-count="2">
+<!--    <listeners>-->
+<!--        <listener name="com.epam.listeners.GlobalListener"/>-->
+<!--    </listeners>-->
+    <test name="Authentication Tests">
+        <classes>
+            <class name="com.epam.api.tests.AuthenticationTests"/>
+        </classes>
+    </test>
+    <test name="Bank Account Tests">
+        <classes>
+            <class name="com.epam.api.tests.BankAccountTests"/>
+        </classes>
+    </test>
+</suite>

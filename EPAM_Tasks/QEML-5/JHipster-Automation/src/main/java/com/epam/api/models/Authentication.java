@@ -11,6 +11,18 @@ public class Authentication {
         this.rememberMe = builder.rememberMe;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setRememberMe(boolean rememberMe) {
+        this.rememberMe = rememberMe;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -46,5 +58,13 @@ public class Authentication {
         public Authentication build(){
             return new Authentication(this);
         }
+    }
+
+    public static Authentication getDefaultAuthentication() {
+        return new Builder()
+                .setUsername("admin")
+                .setPassword("admin")
+                .setRememberMe(false)
+                .build();
     }
 }
