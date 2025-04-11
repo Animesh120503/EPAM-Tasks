@@ -6,6 +6,7 @@ import com.epam.ui.pages.MainPage;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class CreateBankAccountTest extends BaseTest {
@@ -27,6 +28,8 @@ public class CreateBankAccountTest extends BaseTest {
         mainPage = new MainPage(driver)
                 .selectEntityMenu()
                 .selectBankAccountOption();
+
+        assertEquals(driver.getCurrentUrl(), "http://localhost:9000/bank-account");
 
         bankAccountPage = new BankAccountPage(driver)
                 .clickOnCreateNewBankAccount()

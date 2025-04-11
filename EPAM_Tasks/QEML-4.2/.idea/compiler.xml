@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JHipster-Automation-BDD" />
+        <module name="Task-3" />
+        <module name="Task-2" />
+        <module name="Task-1" />
+        <module name="Task-6" />
+        <module name="Task-5" />
+        <module name="Task-4" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JHipster-Automation" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
