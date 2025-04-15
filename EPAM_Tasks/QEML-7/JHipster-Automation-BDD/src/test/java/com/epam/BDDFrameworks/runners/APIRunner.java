@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 
 @Test
 @CucumberOptions(
-        features = "src/test/resources/features/ui",
-        glue = {"com.epam.BDDFrameworks.steps.ui", "com.epam.BDDFrameworks.hooks"},
+        features = "src/test/resources/features/api",
+        glue = "com.epam.BDDFrameworks.steps.api",
         plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
-public class UIRunner extends AbstractTestNGCucumberTests {
+
+public class APIRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios() {

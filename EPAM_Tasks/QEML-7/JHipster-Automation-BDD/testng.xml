@@ -1,0 +1,12 @@
+<suite name = "Suite1">
+    <test name = "UI Tests">
+        <classes>
+            <class name = "com.epam.BDDFrameworks.runners.UIRunner"/>
+        </classes>
+    </test>
+    <test name="API Tests">
+        <classes>
+            <class name="com.epam.BDDFrameworks.runners.APIRunner"/>
+        </classes>
+    </test>
+</suite>

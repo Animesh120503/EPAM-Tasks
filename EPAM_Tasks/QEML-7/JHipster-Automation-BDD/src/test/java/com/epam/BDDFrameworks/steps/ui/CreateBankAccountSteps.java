@@ -1,5 +1,6 @@
 package com.epam.BDDFrameworks.steps.ui;
 
+import com.epam.BDDFrameworks.hooks.UIHooks;
 import com.epam.ui.config.UIConfigReader;
 import com.epam.ui.drivers.DriverManager;
 import com.epam.ui.pages.BankAccountPage;
@@ -13,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.Objects;
 
-import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class CreateBankAccountSteps {
@@ -42,8 +42,6 @@ public class CreateBankAccountSteps {
         mainPage = new MainPage(driver)
                 .selectEntityMenu()
                 .selectBankAccountOption();
-        //        Thread.sleep(3000);
-//        assertEquals(driver.getCurrentUrl(), "http://localhost:9000/bank-account");
     }
 
     @When("User clicks on create new bank account button")
