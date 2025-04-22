@@ -4,11 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-
+class InvalidBrowserException extends Exception{
+    public InvalidBrowserException(String message){
+        super(message);
+    }
+}
 public class DriverFactory{
     WebDriver driver;
 
-    public WebDriver initializeDriver(String browserType){
+    public WebDriver initializeDriver(String browserType) throws InvalidBrowserException {
         switch (browserType.toLowerCase()){
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -19,7 +23,7 @@ public class DriverFactory{
                 driver = new EdgeDriver();
                 break;
             default:
-                throw new IllegalArgumentException("Invalid Browser Type.");
+                throw new InvalidBrowserException("Invalid Browser Type.");
         }
         return driver;
     }
